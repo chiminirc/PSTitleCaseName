@@ -76,3 +76,4 @@ Function Out-Human {
 # Test
 @("sally smith", "don donaldson", "chester arthur", "john macarthur", "marty mcfly") | Out-Human
 @("sally smith", "don donaldson", "chester arthur", "john macarthur", "marty mcfly") | Out-Human -ExceptionList @('mcfly')
+@("sally smith", "don donaldson", "chester arthur", "john macarthur", "marty mcfly") | Out-Human | Where-Object { $_.McOrMac }
